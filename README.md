@@ -1,2 +1,2 @@
 # simple-redux
-a simple redux repo
+this is a simple redux
