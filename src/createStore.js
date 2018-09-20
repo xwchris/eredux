@@ -2,7 +2,7 @@ import isPlainObject from './utils/isPlainObject';
 import ActionTypes from './utils/actionTypes';
 
 // create store
-export function createStore(reducer, preloadState, enhancer) {
+function createStore(reducer, preloadState, enhancer) {
   if (typeof preloadState === 'function' && typeof enhancer === 'undefined') {
     enhancer = preloadState;
     preloadState = undefined;
@@ -24,7 +24,7 @@ export function createStore(reducer, preloadState, enhancer) {
   let currentReducer = reducer;
   let currentState = preloadState;
   let currentListeners = [];
-  let nextListeners = currentListeners[];
+  let nextListeners = currentListeners = [];
   let isDispatching = false;
 
   function ensureCanMutateNextListeners() {
@@ -97,6 +97,7 @@ export function createStore(reducer, preloadState, enhancer) {
     dispatch,
     getState,
     subscribe,
-    replaceReducer
   }
 }
+
+export default createStore;
