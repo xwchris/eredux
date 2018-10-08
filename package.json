@@ -1,0 +1,26 @@
+{
+  "name": "eredux",
+  "version": "1.0.0",
+  "description": "this is a simple redux",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwchris/eredux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xwchris/eredux/issues"
+  },
+  "homepage": "https://github.com/xwchris/eredux#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}

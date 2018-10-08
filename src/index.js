@@ -5,11 +5,13 @@ import bindActionCreators from './bindActionCreators';
 import compose from './compose';
 import __DO_NOT_USE__ActionTypes from './utils/actionTypes';
 
-export {
+export const ERedux = {
   createStore,
   applyMiddleware,
   combineReducers,
   bindActionCreators,
   compose,
   __DO_NOT_USE__ActionTypes
-}
+};
+
+export default ERedux;

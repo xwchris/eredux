@@ -1,2 +1,2 @@
-# simple-redux
+# eredux
 this is a simple redux
