@@ -6,7 +6,7 @@ module.exports = {
   devtool: mode === 'production' ? '' : 'cheap-module-source-map',
   entry: './src/index',
   output: {
-    filename: 'ereact.js',
+    filename: 'eredux.js',
     path: path.resolve(__dirname, './dist'),
     library: 'ERedux',
     libraryTarget: 'umd'
