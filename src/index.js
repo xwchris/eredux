@@ -5,7 +5,7 @@ import bindActionCreators from './bindActionCreators';
 import compose from './compose';
 import __DO_NOT_USE__ActionTypes from './utils/actionTypes';
 
-export {
+module.exports = {
   createStore,
   applyMiddleware,
   combineReducers,
