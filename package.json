@@ -1,10 +1,14 @@
 {
   "name": "eredux",
-  "version": "1.0.5",
-  "description": "this is a simple redux",
-  "main": "./dist/eredux.js",
+  "version": "1.0.6",
+  "description": "a simple emitation of redux",
+  "main": "./index",
   "scripts": {
-    "build": "NODE_ENV=production webpack"
+    "clean": "rm -rf dist",
+    "build-production": "NODE_ENV=production webpack",
+    "build-development": "NODE_ENV=development webpack",
+    "build": "npm run build-production; npm run build-development",
+    "test": "jest"
   },
   "repository": {
     "type": "git",

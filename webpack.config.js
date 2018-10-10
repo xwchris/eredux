@@ -3,10 +3,10 @@ const path = require('path');
 
 module.exports = {
   mode,
-  devtool: mode === 'production' ? '' : 'cheap-module-source-map',
+  devtool: mode === 'production' ? 'nosources-source-map' : 'cheap-eval-source-map',
   entry: './src/index',
   output: {
-    filename: 'eredux.js',
+    filename: `eredux.${mode || 'development'}.js`,
     path: path.resolve(__dirname, './dist'),
     library: 'ERedux',
     libraryTarget: 'umd'
@@ -15,7 +15,8 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?/,
-        use: 'babel-loader'
+        use: 'babel-loader',
+        exclude: /mode_modules/
       }
     ]
   }
